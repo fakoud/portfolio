@@ -10,7 +10,7 @@
   100% {
     opacity: 100%; } }
 
-@media only screen and (min-width: 541px) and (max-width: 1024px) {
+@media only screen and (min-width: 541px) and (max-width: 1920px) {
   .carousel {
     width: 50vw; }
   h5, p {
