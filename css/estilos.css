@@ -10,23 +10,22 @@
   100% {
     opacity: 100%; } }
 
-@media only screen and (min-width: 541px) and (max-width: 1024px) {
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
   .carousel {
     width: 50vw; }
   h5, p {
     font-size: 1.2em; }
   .header__navstyle {
-    letter-spacing: 2px; } }
+    letter-spacing: 2px; }
+  .biografia .parrafo {
+    width: 80%; }
+    .biografia .parrafo p {
+      font-size: 1em; } }
 
-@media only screen and (max-width: 375px) {
-  table tr td ul li {
-    font-size: 0.8em; }
-  footer div div p {
-    font-size: 0.8em; } }
-
-@media only screen and (min-width: 769px) and (max-width: 768px) {
-  .carousel {
-    width: 50vw; } }
+@media only screen and (min-width: 1366px) {
+  .biografia .parrafo {
+    width: 60%;
+    height: 30%; } }
 
 body {
   font-family: 'Open Sans Condensed', sans-serif;
@@ -72,10 +71,10 @@ header .header__redes {
 
 header .header__redes:hover {
   transition: opacity 1s;
-  opacity: 100%; }
+  opacity: 90%; }
 
 header .header__redes--img {
-  width: 30px;
+  width: 35px;
   margin-right: 1vh; }
 
 header .header__navstyle {
@@ -136,12 +135,13 @@ main {
   background-image: url(../media/biogrande.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255, 0.75);
   height: 70vh; }
   .biografia .parrafo {
-    background-color: rgba(255, 255, 255, 0.8); }
-    .biografia .parrafo p {
-      box-sizing: content-box; }
+    background-color: rgba(255, 255, 255, 0.75);
+    border: solid 1px #4B4B4B; }
+    .biografia .parrafo h5 {
+      text-shadow: #4B4B4B -2px 0px; }
 
 .cuadro {
   border: solid 1px lightgrey;

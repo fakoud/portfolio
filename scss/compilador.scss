@@ -2,7 +2,7 @@ $salmon: #C98688;
 $salmonlight: #e2b0b1;
 $darkgrey: #4B4B4B;
 $blanco: white;
-$opacidad: 0.8;
+$opacidad: 0.75;
 $rounded: 'Spartan', sans-serif;
 
 @keyframes aparecer {
@@ -13,7 +13,8 @@ $rounded: 'Spartan', sans-serif;
 	100% {opacity:100%;}
 	}
 
-@media only screen and (min-width: 541px) and (max-width: 1024px){
+	// IPad, Notebooks
+@media only screen and (min-width: 769px) and (max-width: 1024px){
 	.carousel{
 		width: 50vw;
 	}
@@ -23,20 +24,26 @@ $rounded: 'Spartan', sans-serif;
 	.header__navstyle{
 		letter-spacing: 2px;
 	}
-}
-@media only screen and (max-width: 375px){
-	table tr td ul li{
-		font-size: 0.8em;
-	}
-	footer div div p{
-		font-size: 0.8em;	
-	}
-}
-@media only screen and (min-width: 769px) and (max-width: 768px){
-	.carousel{
-		width: 50vw;
+	.biografia{
+		.parrafo{
+			width: 80%;
+			p{
+				font-size: 1em;
+			}
+		}
 	}
 }
+
+// PC, IPad Pro
+@media only screen and (min-width: 1366px){
+	.biografia{
+			.parrafo{
+				width: 60%;
+				height: 30%;
+			}
+		}
+	}
+
 
 
 body{
@@ -95,10 +102,10 @@ body{
 		}
 		.header__redes:hover{
 			transition: opacity 1s;
-			opacity: 100%;
+			opacity: 90%;
 		}
 		.header__redes--img{
-			width: 30px;
+			width: 35px;
 			margin-right: 1vh;			
 		}
 		.header__navstyle{
@@ -184,12 +191,11 @@ body{
 		background-position: center;
 		background-color: rgba($blanco, $opacidad);
 		height: 70vh;
-
 		.parrafo{
 			background-color: rgba($blanco, $opacidad);
-			
-			p{
-			box-sizing: content-box;
+			border: solid 1px $darkgrey;
+			h5{
+				text-shadow: $darkgrey -2px 0px;
 			}
 		}
 	}
