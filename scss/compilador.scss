@@ -1,6 +1,8 @@
 $salmon: #C98688;
 $salmonlight: #e2b0b1;
 $darkgrey: #4B4B4B;
+$blanco: white;
+$opacidad: 0.8;
 $rounded: 'Spartan', sans-serif;
 
 @keyframes aparecer {
@@ -43,7 +45,7 @@ body{
 
 	hr{
 		color: grey;
-		width: 80vw;
+		width: 70vw;
 		margin: 1vh 10vw 1vh 10vw;
 	}
 
@@ -175,6 +177,24 @@ body{
 		}
 
 	//Bio
+
+	.biografia{
+		background-image: url(../media/biogrande.jpg);
+		background-repeat: no-repeat;
+		background-position: center;
+		background-color: rgba($blanco, $opacidad);
+		height: 70vh;
+
+		.parrafo{
+			background-color: rgba($blanco, $opacidad);
+			
+			p{
+			box-sizing: content-box;
+			}
+		}
+	}
+
+	//Contacto
 		.cuadro{
 			border: solid 1px lightgrey;
 			height: 300px;
@@ -199,7 +219,6 @@ body{
 				border: none;
 			}
 		}
-
 	//Galeria
 		.Tradimg{
 			width: 250px;
