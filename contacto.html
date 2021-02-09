@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>fakoud</title>
+
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+	<link rel="stylesheet" href="scss/compilador.scss">
+	<link rel="stylesheet" href="css/estilos.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Spartan:wght@200&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
+</head>
+<body class="m-2">
+	
+	<header>
+		<nav class="navbar navbar-expand-lg navbar-light">
+			<div class="container-fluid">
+
+				<!--Titulo-->
+			   	<div class="row">
+			    	<div class="d-flex justify-content-center align-items-center">
+						<a href="index.html" class="text-reset text-decoration-none d-flex justify-content-center align-self-center">
+							<img src="media/logo.jpg" alt="logo" class="header__logo">
+							<div class="d-flex flex-column justify-content-center align-items-start">
+								<h1>fakoud</h1>
+								<small class="text-muted">
+									artist portfolio
+								</small>
+							</div>
+						</a>
+					</div>
+				</div>
+
+				<!--Boton-->
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+				      <span class="navbar-toggler-icon"></span>
+				</button>
+
+				<!--Navbar-->
+				<div class="collapse navbar-collapse header__navstyle--pad" id="navbarText">
+				    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+				        <li class="nav-item">
+				          <a class="nav-link header__navstyle" aria-current="page" href="index.html">Inicio</a>
+				        </li>
+						<li class="nav-item dropdown">
+				          <a class="nav-link dropdown-toggle header__navstyle" href="galeria.html" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+				            Galería
+				          </a>
+				          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+				            <li><a class="dropdown-item header__navstyle header__navstyle--sub" href="galeriatradi.html">Tradicional</a></li>
+				            <li><a class="dropdown-item header__navstyle header__navstyle--sub" href="galeriadigital.html">Digital</a></li>
+				            <li><a class="dropdown-item header__navstyle header__navstyle--sub" href="galeriatattoo.html">Tattoo</a></li>
+				          </ul>
+				        </li>
+				        <li class="nav-item">
+				          <a class="nav-link header__navstyle" href="shop.html">Shop</a>
+				        </li>
+				        <li class="nav-item">
+				          <a class="nav-link header__navstyle" href="bio.html">Bio</a>
+				        </li>
+				        <li class="nav-item">
+				          <a class="nav-link header__navstyle" href="contacto.html">Contacto</a>
+				        </li>
+				    </ul>
+
+					<!--Redes-->
+				    <span class="navbar-text">
+						<div class="align-self-center">
+						   	<div class="container">
+								<div class="row">
+								    <div class="d-flex justify-content-center">
+								   		<a href="https://www.facebook.com/fparagliola" target="_blank" class="header__redes">
+								   			<img src="media/fb.png" alt="facebook" class="header__redes--img">
+								   		</a>
+										<a href="https://www.instagram.com/fakoud/" target="_blank" class="header__redes">
+											<img src="media/ig.png" alt="instagram" class="header__redes--img">
+										</a>
+										<a href="https://twitter.com/fakoud" target="_blank" class="header__redes">
+											<img src="media/tw.png" alt="twitter" class="header__redes--img">
+										</a>
+									</div>
+							    </div>
+						    </div>
+					    </div>
+				    </span>
+				</div>
+
+			</div>
+		</nav>
+	
+	</header>
+
+	<hr>
+
+	<section class="aparecer container mt-3 mb-3 mt-xl-5 mb-xl-5">
+		<div class="row justify-content-center">
+
+			<!----------------------------------Cuadro 1---------------------------------->
+
+			<div class="col-xl-3">
+				<div class="row justify-content-center">
+					<div class="d-flex flex-column justify-content-center align-items-center m-1 cuadro">
+
+							<h4 class="subtitulo mb-3 text-center">Contacto</h4>
+							<p class="text-center">+541128461886</p>
+							<p class="text-center">fakou@live.com</p>
+							<p class="text-center">Buenos Aires, Argentina</p>
+					</div>
+				</div>					
+			</div>
+
+			<!----------------------------------Cuadro 2---------------------------------->
+			<div class="col-xl-3"> 
+				<div class="d-flex justify-content-center align-items-center">
+					<div class="row justify-content-center align-items-center m-1 cuadro border-0">
+						<form action="#" method="post">
+							  <div class="form-group">
+							    	<input type="text" class="form-control m-1 cuadro__form" id="name" placeholder="Nombre">
+							  </div>
+							  <div class="form-group">
+							    	<input type="text" class="form-control m-1 cuadro__form" id="name" placeholder="Apellido">
+							  </div>
+							  <div class="form-group">
+							    	<input type="email" class="form-control m-1 cuadro__form" id="email" placeholder="Mail">
+							  </div>
+							   <div class="form-group">
+							    <input type="text" class="form-control m-1 cuadro__form" id="asunto" placeholder="Asunto">
+							  </div>
+								<div class="form-floating">
+								  <textarea class="form-control h-50 m-1 cuadro__form" id="mensaje" placeholder="Mensaje" style="height: 130px"></textarea>
+								  <label for="floatingTextarea">Mensaje</label>
+								  <div class="d-flex justify-content-evenly">
+								    <button type="submit" class="btn btn-light m-1 mt-2 cuadro__button">Enviar</button>
+									<button type="reset" class="btn btn-light m-1 mt-2 cuadro__button">Borrar campos</button>
+								</div>
+								</div>
+								</div>
+							
+						</form>
+					</div>					
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+
+	<hr>
+
+	<footer class="container-fluid mt-4 mb-4">
+		<div class="row justify-content-center">
+			<div class="col-12">
+
+				<div class="text-black-50 d-none d-md-block">
+						<p class="text-center m-0"><i>Copyright © 2020 - Ilustraciones por Facundo Paragliola. Usar sólo bajo consentimiento del artista.</i></p>
+				</div>				
+
+				<div class="text-black-50 d-md-none">
+						<p class="text-center m-0"><i>Copyright © 2020 - Ilustraciones por Facundo Paragliola.</i></p>
+						<p class="text-center m-0"><i>Usar sólo bajo consentimiento del artista.</i></p>
+				</div>
+
+			</div>
+		</div>
+	</footer>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+</body>
+</html>
