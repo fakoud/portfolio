@@ -76,12 +76,10 @@ footer .footer--font {
   font-style: italic;
   font-family: #rounded; }
 
-main {
-  height: 75vh; }
-  main .main__portada {
-    filter: grayscale(20%);
-    opacity: 85%;
-    -webkit-filter: grayscale(20%); }
+main .main__portada {
+  filter: grayscale(20%);
+  opacity: 85%;
+  -webkit-filter: grayscale(20%); }
 
 .shop .shop__img {
   padding: 0.5vh;
@@ -114,9 +112,9 @@ main {
 .biografia {
   background-image: url(../media/biogrande.jpg);
   background-repeat: no-repeat;
-  background-color: rgba(255, 255, 255, 0.5); }
+  background-color: rgba(255, 255, 255, 0.75); }
   .biografia .parrafo {
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.75);
     border: solid 1px #4B4B4B; }
     .biografia .parrafo h5 {
       text-shadow: #4B4B4B -2px 0px; }
@@ -153,20 +151,30 @@ main {
   -webkit-filter: grayscale(0%);
   transition-timing-function: ease; }
 
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 767px) {
   .biografia {
     background-image: url(../media/biosmall.jpg); }
     .biografia .parrafo {
       width: 85vw;
       margin: 2vh; }
   main {
+    height: 75vh;
     background-image: url(../media/index-cel.JPG);
     background-repeat: no-repeat;
     background-size: 100vw;
     background-color: #FFFF;
-    background-color: rgba(255, 255, 255, 0.5); } }
+    background-color: rgba(255, 255, 255, 0.75); } }
 
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (max-width: 767px) and (orientation: landscape) {
+  main {
+    height: 75vh;
+    background-image: url(../media/index-big.jpg);
+    background-repeat: no-repeat;
+    background-size: 100vw;
+    background-color: #FFFF;
+    background-color: rgba(255, 255, 255, 0.75); } }
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
   .carousel {
     width: 50vw; }
   h5, p {
@@ -175,20 +183,53 @@ main {
     letter-spacing: 2px; }
   .biografia {
     background-size: 85vw;
-    height: 70vh; }
+    height: 70vh;
+    background-position: center; }
     .biografia .parrafo {
       width: 75vw; }
       .biografia .parrafo p {
-        font-size: 1em; } }
+        font-size: 1em; }
+  main {
+    height: 75vh;
+    background-image: url(../media/index-cel.JPG);
+    background-repeat: no-repeat;
+    background-size: 100vw;
+    background-color: #FFFF;
+    background-color: rgba(255, 255, 255, 0.75); } }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1024px) and (max-width: 1279px) {
   .biografia {
-    height: 70vh; }
+    height: 70vh;
+    background-position: center; }
     .biografia .parrafo {
-      width: 60vw; } }
+      width: 60vw; }
+  main {
+    height: 75vh;
+    background-image: url(../media/index-cel.JPG);
+    background-repeat: no-repeat;
+    background-size: 100vw;
+    background-color: #FFFF;
+    background-color: rgba(255, 255, 255, 0.75); } }
+
+@media only screen and (min-width: 1024px) and (max-width: 1279px) and (orientation: landscape) {
+  main {
+    height: 70vh;
+    background-image: url(../media/index-big.JPG);
+    background-repeat: no-repeat;
+    background-size: 100vw;
+    background-color: #FFFF;
+    background-color: rgba(255, 255, 255, 0.75); } }
 
 @media only screen and (min-width: 1280px) {
   .biografia {
-    height: 70vh; }
+    height: 650px;
+    background-position: center; }
     .biografia .parrafo {
-      width: 30vw; } }
+      width: 30vw; }
+  main {
+    height: 650px;
+    background-image: url(../media/index-big.JPG);
+    background-repeat: no-repeat;
+    background-size: 100vw;
+    background-color: #FFFF;
+    background-color: rgba(255, 255, 255, 0.75); } }

@@ -1,7 +1,7 @@
 $salmon: #C98688;
 $salmonlight: #e2b0b1;
 $darkgrey: #4B4B4B;
-$opacidad: 0.5;
+$opacidad: 0.75;
 $blanco: #FFFF;
 $rounded: 'Spartan', sans-serif;
 
@@ -100,7 +100,6 @@ body{
 
 	//Index
 		main{
-			height: 75vh;
 			
 			.main__portada{
 				filter: grayscale(20%);
@@ -202,8 +201,9 @@ body{
 			transition-timing-function: ease;
 		}
 
-	// Celulares
-	@media only screen and (max-width: 576px){
+
+	// --------------------------------------------  Celulares
+	@media only screen and (max-width: 767px){
 		.biografia{
 			background-image: url(../media/biosmall.jpg);
 			.parrafo{
@@ -213,17 +213,30 @@ body{
 		}
 
 		main{
+			height: 75vh;
 			background-image: url(../media/index-cel.JPG);
 			background-repeat: no-repeat;
 			background-size: 100vw;
 			background-color: $blanco;
 			background-color: rgba($blanco, $opacidad);
-		}
+			}
+
+	}
+	@media only screen and (max-width: 767px) and (orientation: landscape){
+
+		main{
+			height: 75vh;
+			background-image: url(../media/index-big.jpg);
+			background-repeat: no-repeat;
+			background-size: 100vw;
+			background-color: $blanco;
+			background-color: rgba($blanco, $opacidad);
+			}
 
 	}
 
-	// IPad, Notebooks
-	@media only screen and (min-width: 768px) and (max-width: 1024px){
+	// --------------------------------------------  IPad, Notebooks
+	@media only screen and (min-width: 768px) and (max-width: 1023px){
 		.carousel{
 			width: 50vw;
 		}
@@ -236,6 +249,7 @@ body{
 		.biografia{
 			background-size: 85vw;
 			height: 70vh;
+			background-position: center;
 			.parrafo{
 				width: 75vw;
 				p{
@@ -243,24 +257,67 @@ body{
 				}
 			}
 		}
+		main{
+			height: 75vh;
+			background-image: url(../media/index-cel.JPG);
+			background-repeat: no-repeat;
+			background-size: 100vw;
+			background-color: $blanco;
+			background-color: rgba($blanco, $opacidad);
+			}
 	}
 
-	// PC, IPad Pro
-	@media only screen and (min-width: 1024px){
+
+	// --------------------------------------------  PC, IPad Pro
+	@media only screen and (min-width: 1024px) and (max-width: 1279px){
 		.biografia{
 			height: 70vh;
+			background-position: center;
 				.parrafo{
 					width: 60vw;
 				}
 			}
-		}
+		main{
+			height: 75vh;
+			background-image: url(../media/index-cel.JPG);
+			background-repeat: no-repeat;
+			background-size: 100vw;
+			background-color: $blanco;
+			background-color: rgba($blanco, $opacidad);
+			}
 
-	// PC XL
+		}
+		@media only screen and (min-width: 1024px) and (max-width: 1279px) and (orientation: landscape){
+
+			main{
+				height: 70vh;
+				background-image: url(../media/index-big.JPG);
+				background-repeat: no-repeat;
+				background-size: 100vw;
+				background-color: $blanco;
+				background-color: rgba($blanco, $opacidad);
+				}
+			}
+		
+
+
+	// --------------------------------------------  PC XL
 	@media only screen and (min-width: 1280px){
 	.biografia{
-		height: 70vh;
+		height: 650px;
+		background-position: center;
 			.parrafo{
 				width: 30vw;
 			}
 		}
+
+	main{
+		height: 650px;
+		background-image: url(../media/index-big.JPG);
+		background-repeat: no-repeat;
+		background-size: 100vw;
+		background-color: $blanco;
+		background-color: rgba($blanco, $opacidad);
+		}
+
 	}
