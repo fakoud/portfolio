@@ -10,22 +10,44 @@
   100% {
     opacity: 100%; } }
 
-@media only screen and (min-width: 769px) and (max-width: 1024px) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
   .carousel {
     width: 50vw; }
   h5, p {
     font-size: 1.2em; }
   .header__navstyle {
     letter-spacing: 2px; }
-  .biografia .parrafo {
-    width: 80%; }
-    .biografia .parrafo p {
-      font-size: 1em; } }
+  .biografia {
+    background-size: 85vw;
+    height: 70vh; }
+    .biografia .parrafo {
+      width: 75vw; }
+      .biografia .parrafo p {
+        font-size: 1em; } }
 
-@media only screen and (min-width: 1366px) {
+@media only screen and (min-width: 1024px) {
+  .biografia {
+    height: 70vh; }
+    .biografia .parrafo {
+      width: 60vw; } }
+
+.biografia {
+  background-image: url(../media/biogrande.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: rgba(255, 255, 255, 0.75); }
   .biografia .parrafo {
-    width: 60%;
-    height: 30%; } }
+    background-color: rgba(255, 255, 255, 0.75);
+    border: solid 1px #4B4B4B; }
+    .biografia .parrafo h5 {
+      text-shadow: #4B4B4B -2px 0px; }
+
+@media only screen and (max-width: 576px) {
+  .biografia {
+    background-image: url(../media/biosmall.jpg); }
+    .biografia .parrafo {
+      width: 85vw;
+      margin: 2vh; } }
 
 body {
   font-family: 'Open Sans Condensed', sans-serif;
@@ -130,18 +152,6 @@ main {
   color: grey; }
   .shop .shop__promos .shop__table tr th {
     color: #C98688; }
-
-.biografia {
-  background-image: url(../media/biogrande.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-color: rgba(255, 255, 255, 0.75);
-  height: 70vh; }
-  .biografia .parrafo {
-    background-color: rgba(255, 255, 255, 0.75);
-    border: solid 1px #4B4B4B; }
-    .biografia .parrafo h5 {
-      text-shadow: #4B4B4B -2px 0px; }
 
 .cuadro {
   border: solid 1px lightgrey;
