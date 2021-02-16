@@ -1,8 +1,8 @@
 $salmon: #C98688;
 $salmonlight: #e2b0b1;
 $darkgrey: #4B4B4B;
-$blanco: white;
-$opacidad: 0.75;
+$opacidad: 0.5;
+$blanco: #FFFF;
 $rounded: 'Spartan', sans-serif;
 
 @keyframes aparecer {
@@ -11,64 +11,6 @@ $rounded: 'Spartan', sans-serif;
 	50% {opacity:50%;}
 	75% {opacity:75%;}
 	100% {opacity:100%;}
-	}
-
-	// IPad, Notebooks
-@media only screen and (min-width: 768px) and (max-width: 1024px){
-	.carousel{
-		width: 50vw;
-	}
-	h5, p{
-		font-size: 1.2em;
-	}
-	.header__navstyle{
-		letter-spacing: 2px;
-	}
-	.biografia{
-		background-size: 85vw;
-		height: 70vh;
-		.parrafo{
-			width: 75vw;
-			p{
-				font-size: 1em;
-			}
-		}
-	}
-}
-
-// PC, IPad Pro
-@media only screen and (min-width: 1024px){
-	.biografia{
-		height: 70vh;
-			.parrafo{
-				width: 60vw;
-			}
-		}
-	}
-
-// PC XL
-@media only screen and (min-width: 1280px){
-	.biografia{
-		height: 70vh;
-			.parrafo{
-				width: 30vw;
-			}
-		}
-	}
-	//Bio
-
-	.biografia{
-		background-image: url(../media/biogrande.jpg);
-		background-repeat: no-repeat;
-		background-position: center;
-		background-color: rgba($blanco, $opacidad);
-		.parrafo{
-			background-color: rgba($blanco, $opacidad);
-			border: solid 1px $darkgrey;
-			h5{
-				text-shadow: $darkgrey -2px 0px;
-			}
-		}
 	}
 
 
@@ -159,15 +101,14 @@ body{
 	//Index
 		main{
 			height: 75vh;
-			opacity: 90%;
 			
 			.main__portada{
 				filter: grayscale(20%);
 				opacity: 85%;
 				-webkit-filter: grayscale(20%);
-}
+		}
 
-}
+	}
 
 	//Shop
 		.shop{
@@ -207,7 +148,20 @@ body{
 			}
 		}
 
+	//Bio
 
+	.biografia{
+		background-image: url(../media/biogrande.jpg);
+		background-repeat: no-repeat;
+		background-color: rgba($blanco, $opacidad);
+		.parrafo{
+			background-color: rgba($blanco, $opacidad);
+			border: solid 1px $darkgrey;
+			h5{
+				text-shadow: $darkgrey -2px 0px;
+			}
+		}
+	}
 
 	//Contacto
 		.cuadro{
@@ -248,7 +202,7 @@ body{
 			transition-timing-function: ease;
 		}
 
-	// Bio en Celulares
+	// Celulares
 	@media only screen and (max-width: 576px){
 		.biografia{
 			background-image: url(../media/biosmall.jpg);
@@ -262,8 +216,51 @@ body{
 			background-image: url(../media/index-cel.JPG);
 			background-repeat: no-repeat;
 			background-size: 100vw;
-			background-color: rgba($color: white, $alpha: .5);
-			width: 100vw;
+			background-color: $blanco;
+			background-color: rgba($blanco, $opacidad);
 		}
 
+	}
+
+	// IPad, Notebooks
+	@media only screen and (min-width: 768px) and (max-width: 1024px){
+		.carousel{
+			width: 50vw;
+		}
+		h5, p{
+			font-size: 1.2em;
+		}
+		.header__navstyle{
+			letter-spacing: 2px;
+		}
+		.biografia{
+			background-size: 85vw;
+			height: 70vh;
+			.parrafo{
+				width: 75vw;
+				p{
+					font-size: 1em;
+				}
+			}
+		}
+	}
+
+	// PC, IPad Pro
+	@media only screen and (min-width: 1024px){
+		.biografia{
+			height: 70vh;
+				.parrafo{
+					width: 60vw;
+				}
+			}
+		}
+
+	// PC XL
+	@media only screen and (min-width: 1280px){
+	.biografia{
+		height: 70vh;
+			.parrafo{
+				width: 30vw;
+			}
+		}
 	}
