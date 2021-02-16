@@ -31,6 +31,12 @@
     .biografia .parrafo {
       width: 60vw; } }
 
+@media only screen and (min-width: 1280px) {
+  .biografia {
+    height: 70vh; }
+    .biografia .parrafo {
+      width: 30vw; } }
+
 .biografia {
   background-image: url(../media/biogrande.jpg);
   background-repeat: no-repeat;

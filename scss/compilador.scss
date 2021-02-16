@@ -46,6 +46,15 @@ $rounded: 'Spartan', sans-serif;
 		}
 	}
 
+// PC XL
+@media only screen and (min-width: 1280px){
+	.biografia{
+		height: 70vh;
+			.parrafo{
+				width: 30vw;
+			}
+		}
+	}
 	//Bio
 
 	.biografia{
