@@ -22,7 +22,8 @@ body {
     animation-iteration-count: 1;
     animation-timing-function: ease-in;
     animation-duration: 1s;
-    animation-delay: 0s; }
+    animation-delay: 0s;
+    height: 80vh; }
   body .subtitulo {
     letter-spacing: 0.5vh;
     color: #C98688;
@@ -34,6 +35,12 @@ body {
     letter-spacing: 1px; }
   body .opacidad {
     opacity: 85%; }
+  body .redes {
+    padding: 0vh 2vh 0vh 2vh; }
+  body .redes:hover {
+    transition: opacity 1s; }
+  body .redes--img {
+    width: 35px; }
 
 header .header__logo {
   margin-right: 2vh;
@@ -41,29 +48,20 @@ header .header__logo {
   height: 100%; }
 
 header h1 {
-  color: #4B4B4B;
-  font-size: 1.3em;
+  color: #FFFF;
+  font-size: 1.5em;
   font-family: "Spartan", sans-serif;
   font-weight: bold;
   letter-spacing: 4px;
   margin: 0vh;
   font-weight: bold; }
 
-header .header__redes {
-  opacity: 70%; }
-
-header .header__redes:hover {
-  transition: opacity 1s;
-  opacity: 90%; }
-
-header .header__redes--img {
-  width: 35px;
-  margin-right: 1vh; }
-
 header .header__navstyle {
   font-family: "Spartan", sans-serif;
-  color: grey;
   font-weight: bold; }
+
+header .header__navstyle--sub {
+  color: white; }
 
 header .header__navstyle--sub:active {
   background-color: #C98688;
@@ -76,10 +74,12 @@ footer .footer--font {
   font-style: italic;
   font-family: #rounded; }
 
-main .main__portada {
-  filter: grayscale(20%);
-  opacity: 85%;
-  -webkit-filter: grayscale(20%); }
+main {
+  height: 80vh; }
+  main .main__portada {
+    filter: grayscale(20%);
+    opacity: 85%;
+    -webkit-filter: grayscale(20%); }
 
 .shop .shop__img {
   padding: 0.5vh;
@@ -112,7 +112,7 @@ main .main__portada {
 .biografia {
   background-image: url(../media/biogrande.jpg);
   background-repeat: no-repeat;
-  background-color: rgba(255, 255, 255, 0.75); }
+  border: solid 20px white; }
   .biografia .parrafo {
     background-color: rgba(255, 255, 255, 0.75);
     border: solid 1px #4B4B4B; }
@@ -120,14 +120,15 @@ main .main__portada {
       text-shadow: #4B4B4B -2px 0px; }
 
 .cuadro {
-  border: solid 1px lightgrey;
+  background-color: rgba(255, 255, 255, 0.75);
+  border: solid 1px #4B4B4B;
   height: 300px;
   width: 300px; }
   .cuadro .cuadro__form {
     resize: none;
     height: 50%; }
   .cuadro .cuadro__form:focus {
-    border-color: #e2b0b1;
+    border-color: #C98688;
     box-shadow: 0 0 0 0.25rem #e1afb0;
     opacity: 80%;
     resize: none; }
@@ -151,28 +152,29 @@ main .main__portada {
   -webkit-filter: grayscale(0%);
   transition-timing-function: ease; }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 479px) {
   .biografia {
     background-image: url(../media/biosmall.jpg); }
     .biografia .parrafo {
       width: 85vw;
       margin: 2vh; }
-  main {
-    height: 75vh;
+  body {
+    height: 100vh;
     background-image: url(../media/index-cel.JPG);
     background-repeat: no-repeat;
-    background-size: 100vw;
-    background-color: #FFFF;
-    background-color: rgba(255, 255, 255, 0.75); } }
+    background-attachment: fixed;
+    background-size: 100vh; }
+    body main {
+      height: 80vh; }
+    body footer p {
+      color: white; } }
 
-@media only screen and (max-width: 767px) and (orientation: landscape) {
+@media only screen and (min-width: 480px) and (max-width: 767px) {
   main {
     height: 75vh;
     background-image: url(../media/index-big.jpg);
     background-repeat: no-repeat;
-    background-size: 100vw;
-    background-color: #FFFF;
-    background-color: rgba(255, 255, 255, 0.75); } }
+    background-size: 100vw; } }
 
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
   .carousel {
@@ -191,11 +193,9 @@ main .main__portada {
         font-size: 1em; }
   main {
     height: 75vh;
-    background-image: url(../media/index-cel.JPG);
+    background-image: url(../media/index-square.JPG);
     background-repeat: no-repeat;
-    background-size: 100vw;
-    background-color: #FFFF;
-    background-color: rgba(255, 255, 255, 0.75); } }
+    background-size: 100vw; } }
 
 @media only screen and (min-width: 1024px) and (max-width: 1279px) {
   .biografia {
@@ -204,32 +204,43 @@ main .main__portada {
     .biografia .parrafo {
       width: 60vw; }
   main {
-    height: 75vh;
-    background-image: url(../media/index-cel.JPG);
+    height: 70vh;
+    background-image: url(../media/index-square.JPG);
     background-repeat: no-repeat;
-    background-size: 100vw;
-    background-color: #FFFF;
-    background-color: rgba(255, 255, 255, 0.75); } }
+    background-size: 100vw; } }
 
 @media only screen and (min-width: 1024px) and (max-width: 1279px) and (orientation: landscape) {
   main {
     height: 70vh;
     background-image: url(../media/index-big.JPG);
     background-repeat: no-repeat;
-    background-size: 100vw;
-    background-color: #FFFF;
-    background-color: rgba(255, 255, 255, 0.75); } }
+    background-size: 100vw; } }
 
-@media only screen and (min-width: 1280px) {
+@media only screen and (min-width: 1280px) and (max-width: 1439) {
   .biografia {
-    height: 650px;
+    height: 75vh;
     background-position: center; }
     .biografia .parrafo {
       width: 30vw; }
   main {
-    height: 650px;
+    height: 65vh;
     background-image: url(../media/index-big.JPG);
     background-repeat: no-repeat;
-    background-size: 100vw;
-    background-color: #FFFF;
-    background-color: rgba(255, 255, 255, 0.75); } }
+    background-size: 100vw; } }
+
+@media only screen and (min-width: 1440px) {
+  .biografia {
+    height: 70vh;
+    width: 40vw;
+    background-position: center; }
+    .biografia .parrafo {
+      width: 30vw; }
+  body {
+    height: 100vh;
+    background-image: url(../media/indexfull.JPG);
+    background-repeat: no-repeat;
+    background-size: 100vw; }
+    body main {
+      height: 80vh; }
+    body footer p {
+      color: white; } }

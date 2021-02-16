@@ -30,6 +30,7 @@ body{
 		animation-timing-function: ease-in;
 		animation-duration: 1s;
 		animation-delay: 0s;
+		height: 80vh;
 	}
 
 	.subtitulo{
@@ -47,6 +48,17 @@ body{
 	.opacidad{
 		opacity:85%;
 	}
+	.redes{
+		padding: 0vh 2vh 0vh 2vh;
+		//opacity: 70%;
+	}
+	.redes:hover{
+		transition: opacity 1s;
+		//opacity: 90%;
+	}
+	.redes--img{
+		width: 35px;			
+	}
 }
 
 	header{
@@ -56,8 +68,8 @@ body{
 			height: 100%;
 		}
 		h1{
-			color: $darkgrey;
-			font-size: 1.3em;
+			color: $blanco;
+			font-size: 1.5em;
 			font-family: $rounded;
 			font-weight: bold;
 			letter-spacing: 4px;
@@ -65,22 +77,14 @@ body{
 			font-weight: bold;
 		}
 			//Navbar
-		.header__redes{
-			opacity: 70%;
-		}
-		.header__redes:hover{
-			transition: opacity 1s;
-			opacity: 90%;
-		}
-		.header__redes--img{
-			width: 35px;
-			margin-right: 1vh;			
-		}
 		.header__navstyle{
 			font-family: $rounded;
-			color: grey;
 			font-weight: bold;
 		}
+		.header__navstyle--sub{
+			color: white;
+		}
+
 		.header__navstyle--sub:active{
 			background-color: $salmon;
 			opacity: 55%;
@@ -100,6 +104,7 @@ body{
 
 	//Index
 		main{
+			height: 80vh;
 			
 			.main__portada{
 				filter: grayscale(20%);
@@ -152,7 +157,7 @@ body{
 	.biografia{
 		background-image: url(../media/biogrande.jpg);
 		background-repeat: no-repeat;
-		background-color: rgba($blanco, $opacidad);
+		border: solid 20px white;
 		.parrafo{
 			background-color: rgba($blanco, $opacidad);
 			border: solid 1px $darkgrey;
@@ -164,15 +169,17 @@ body{
 
 	//Contacto
 		.cuadro{
-			border: solid 1px lightgrey;
+			background-color: rgba($blanco, $opacidad);
+			border: solid 1px $darkgrey;
 			height: 300px;
 			width: 300px;
+		
 			.cuadro__form{
 				resize: none;
 				height: 50%;
 			}
 			.cuadro__form:focus{
-				border-color: $salmonlight;
+				border-color: $salmon;
 				box-shadow: 0 0 0 0.25rem rgb(225, 175, 176);
 				opacity: 80%;
 				resize: none;
@@ -203,7 +210,7 @@ body{
 
 
 	// --------------------------------------------  Celulares
-	@media only screen and (max-width: 767px){
+	@media only screen and (max-width: 479px){
 		.biografia{
 			background-image: url(../media/biosmall.jpg);
 			.parrafo{
@@ -212,25 +219,29 @@ body{
 			}
 		}
 
-		main{
-			height: 75vh;
+		body{
+			height: 100vh;
 			background-image: url(../media/index-cel.JPG);
 			background-repeat: no-repeat;
-			background-size: 100vw;
-			background-color: $blanco;
-			background-color: rgba($blanco, $opacidad);
+			background-attachment: fixed;
+			background-size: 100vh;
+			
+			main{
+				height: 80vh;
 			}
+			footer p{
+				color: white;
+			}
+	}		
 
 	}
-	@media only screen and (max-width: 767px) and (orientation: landscape){
+	@media only screen and (min-width: 480px) and (max-width: 767px){
 
 		main{
 			height: 75vh;
 			background-image: url(../media/index-big.jpg);
 			background-repeat: no-repeat;
 			background-size: 100vw;
-			background-color: $blanco;
-			background-color: rgba($blanco, $opacidad);
 			}
 
 	}
@@ -259,11 +270,9 @@ body{
 		}
 		main{
 			height: 75vh;
-			background-image: url(../media/index-cel.JPG);
+			background-image: url(../media/index-square.JPG);
 			background-repeat: no-repeat;
 			background-size: 100vw;
-			background-color: $blanco;
-			background-color: rgba($blanco, $opacidad);
 			}
 	}
 
@@ -278,12 +287,10 @@ body{
 				}
 			}
 		main{
-			height: 75vh;
-			background-image: url(../media/index-cel.JPG);
+			height: 70vh;
+			background-image: url(../media/index-square.JPG);
 			background-repeat: no-repeat;
 			background-size: 100vw;
-			background-color: $blanco;
-			background-color: rgba($blanco, $opacidad);
 			}
 
 		}
@@ -294,17 +301,15 @@ body{
 				background-image: url(../media/index-big.JPG);
 				background-repeat: no-repeat;
 				background-size: 100vw;
-				background-color: $blanco;
-				background-color: rgba($blanco, $opacidad);
 				}
 			}
 		
 
 
 	// --------------------------------------------  PC XL
-	@media only screen and (min-width: 1280px){
+	@media only screen and (min-width: 1280px) and (max-width: 1439){
 	.biografia{
-		height: 650px;
+		height: 75vh;
 		background-position: center;
 			.parrafo{
 				width: 30vw;
@@ -312,12 +317,36 @@ body{
 		}
 
 	main{
-		height: 650px;
+		height: 65vh;
 		background-image: url(../media/index-big.JPG);
 		background-repeat: no-repeat;
 		background-size: 100vw;
-		background-color: $blanco;
-		background-color: rgba($blanco, $opacidad);
 		}
 
+	}
+
+	// --------------------------------------------  PC XXL
+	@media only screen and (min-width: 1440px){
+	.biografia{
+		height: 70vh;
+		width: 40vw;
+		background-position: center;
+			.parrafo{
+				width: 30vw;
+			}
+		}
+
+	body{
+		height: 100vh;
+		background-image: url(../media/indexfull.JPG);
+		background-repeat: no-repeat;
+		background-size: 100vw;
+		
+		main{
+			height: 80vh;
+		}
+		footer p{
+			color: white;
+		}
+	}
 	}

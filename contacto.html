@@ -13,10 +13,10 @@
 	<link href="https://fonts.googleapis.com/css2?family=Spartan:wght@200&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
 </head>
-<body class="m-2">
+<body>
 	
-	<header>
-		<nav class="navbar navbar-expand-lg navbar-light">
+	<header class="p-3">
+		<nav class="navbar navbar-expand-lg navbar-dark">
 			<div class="container-fluid">
 
 				<!--Titulo-->
@@ -26,7 +26,7 @@
 							<img src="media/logo.jpg" alt="logo" class="header__logo">
 							<div class="d-flex flex-column justify-content-center align-items-start">
 								<h1>fakoud</h1>
-								<small class="text-muted">
+								<small class="text-white">
 									artist portfolio
 								</small>
 							</div>
@@ -93,10 +93,8 @@
 	
 	</header>
 
-	<hr>
-
-	<section class="aparecer container mt-3 mb-3 mt-xl-5 mb-xl-5">
-		<div class="row justify-content-center">
+	<section class="aparecer container">
+		<div class="row justify-content-center align-items-center h-75">
 
 			<!----------------------------------Cuadro 1---------------------------------->
 
@@ -115,7 +113,7 @@
 			<!----------------------------------Cuadro 2---------------------------------->
 			<div class="col-xl-3"> 
 				<div class="d-flex justify-content-center align-items-center">
-					<div class="row justify-content-center align-items-center m-1 cuadro border-0">
+					<div class="row justify-content-center align-items-center m-1 cuadro border-0 bg-transparent">
 						<form action="#" method="post">
 							  <div class="form-group">
 							    	<input type="text" class="form-control m-1 cuadro__form" id="name" placeholder="Nombre">
@@ -147,20 +145,17 @@
 	</section>
 
 
-
-	<hr>
-
 	<footer class="container-fluid mt-4 mb-4">
-		<div class="row justify-content-center">
+		<div class="row">
 			<div class="col-12">
 
-				<div class="text-black-50 d-none d-md-block">
-						<p class="text-center m-0"><i>Copyright © 2020 - Ilustraciones por Facundo Paragliola. Usar sólo bajo consentimiento del artista.</i></p>
+				<div class="d-flex justify-content-center align-items-center text-black-50 d-none d-md-block">
+						<p class="text-center m-0 footer--font">Copyright © 2020 - Ilustraciones por Facundo Paragliola. Usar sólo bajo consentimiento del artista.</p>
 				</div>				
 
-				<div class="text-black-50 d-md-none">
-						<p class="text-center m-0"><i>Copyright © 2020 - Ilustraciones por Facundo Paragliola.</i></p>
-						<p class="text-center m-0"><i>Usar sólo bajo consentimiento del artista.</i></p>
+				<div class="d-flex flex-column justify-content-center align-items-center text-black-50 d-md-none">
+						<p class="text-center m-0 footer--font">Copyright © 2020 - Ilustraciones por Facundo Paragliola.</p>
+						<p class="text-center m-0 footer--font">Usar sólo bajo consentimiento del artista.</p>
 				</div>
 
 			</div>
