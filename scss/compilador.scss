@@ -16,10 +16,10 @@ $rounded: 'Spartan', sans-serif;
 
 body{
 	font-family: 'Open Sans Condensed', sans-serif;
-	color: grey;
+	color: white;
 
 	hr{
-		color: grey;
+		color: white;
 		width: 70vw;
 		margin: 1vh 10vw 1vh 10vw;
 	}
@@ -30,7 +30,6 @@ body{
 		animation-timing-function: ease-in;
 		animation-duration: 1s;
 		animation-delay: 0s;
-		height: 80vh;
 	}
 
 	.subtitulo{
@@ -49,13 +48,17 @@ body{
 		opacity:85%;
 	}
 	.redes{
-		padding: 0vh 2vh 0vh 2vh;
-		//opacity: 70%;
+		padding: 0vh 1vh 0vh 1vh;
+		opacity: 70%;
 	}
 	.redes:hover{
 		transition: opacity 1s;
-		//opacity: 90%;
-	}
+		opacity: 90%;
+		-webkit-transition: opacity 1s;
+		-moz-transition: opacity 1s;
+		-ms-transition: opacity 1s;
+		-o-transition: opacity 1s;
+}
 	.redes--img{
 		width: 35px;			
 	}
@@ -164,6 +167,9 @@ body{
 			h5{
 				text-shadow: $darkgrey -2px 0px;
 			}
+			p{
+				color: $darkgrey;
+			}
 		}
 	}
 
@@ -228,9 +234,6 @@ body{
 			
 			main{
 				height: 80vh;
-			}
-			footer p{
-				color: white;
 			}
 	}		
 
@@ -344,9 +347,6 @@ body{
 		
 		main{
 			height: 80vh;
-		}
-		footer p{
-			color: white;
 		}
 	}
 	}

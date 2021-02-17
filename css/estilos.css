@@ -12,9 +12,9 @@
 
 body {
   font-family: 'Open Sans Condensed', sans-serif;
-  color: grey; }
+  color: white; }
   body hr {
-    color: grey;
+    color: white;
     width: 70vw;
     margin: 1vh 10vw 1vh 10vw; }
   body .aparecer {
@@ -22,8 +22,7 @@ body {
     animation-iteration-count: 1;
     animation-timing-function: ease-in;
     animation-duration: 1s;
-    animation-delay: 0s;
-    height: 80vh; }
+    animation-delay: 0s; }
   body .subtitulo {
     letter-spacing: 0.5vh;
     color: #C98688;
@@ -36,9 +35,15 @@ body {
   body .opacidad {
     opacity: 85%; }
   body .redes {
-    padding: 0vh 2vh 0vh 2vh; }
+    padding: 0vh 1vh 0vh 1vh;
+    opacity: 70%; }
   body .redes:hover {
-    transition: opacity 1s; }
+    transition: opacity 1s;
+    opacity: 90%;
+    -webkit-transition: opacity 1s;
+    -moz-transition: opacity 1s;
+    -ms-transition: opacity 1s;
+    -o-transition: opacity 1s; }
   body .redes--img {
     width: 35px; }
 
@@ -118,6 +123,8 @@ main {
     border: solid 1px #4B4B4B; }
     .biografia .parrafo h5 {
       text-shadow: #4B4B4B -2px 0px; }
+    .biografia .parrafo p {
+      color: #4B4B4B; }
 
 .cuadro {
   background-color: rgba(255, 255, 255, 0.75);
@@ -165,9 +172,7 @@ main {
     background-attachment: fixed;
     background-size: 100vh; }
     body main {
-      height: 80vh; }
-    body footer p {
-      color: white; } }
+      height: 80vh; } }
 
 @media only screen and (min-width: 480px) and (max-width: 767px) {
   main {
@@ -241,6 +246,4 @@ main {
     background-repeat: no-repeat;
     background-size: 100vw; }
     body main {
-      height: 80vh; }
-    body footer p {
-      color: white; } }
+      height: 80vh; } }
