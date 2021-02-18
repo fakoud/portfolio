@@ -17,6 +17,9 @@ $rounded: 'Spartan', sans-serif;
 body{
 	font-family: 'Open Sans Condensed', sans-serif;
 	color: white;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
 
 	hr{
 		color: white;
@@ -66,9 +69,8 @@ body{
 
 	header{
 		.header__logo{
-			margin-right: 2vh;
-			opacity: 85%;
-			height: 100%;
+			width: 60px;
+			margin-right: 3vh;
 		}
 		h1{
 			color: $blanco;
@@ -107,13 +109,10 @@ body{
 
 	//Index
 		main{
-			height: 80vh;
-			
-			.main__portada{
-				filter: grayscale(20%);
-				opacity: 85%;
-				-webkit-filter: grayscale(20%);
-		}
+			height: 70vh;
+			h2{
+				font-family: $rounded;
+			}
 
 	}
 
@@ -217,6 +216,9 @@ body{
 
 	// --------------------------------------------  Celulares
 	@media only screen and (max-width: 479px){
+		.main__portada{
+			width: 70vw;
+		}
 		.biografia{
 			background-image: url(../media/biosmall.jpg);
 			.parrafo{
@@ -226,31 +228,25 @@ body{
 		}
 
 		body{
-			height: 100vh;
 			background-image: url(../media/index-cel.JPG);
-			background-repeat: no-repeat;
-			background-attachment: fixed;
-			background-size: 100vh;
-			
-			main{
-				height: 80vh;
-			}
 	}		
 
 	}
 	@media only screen and (min-width: 480px) and (max-width: 767px){
-
-		main{
-			height: 75vh;
-			background-image: url(../media/index-big.jpg);
-			background-repeat: no-repeat;
-			background-size: 100vw;
-			}
+		.main__portada{
+			width: 30vw;
+		}
+		body{
+			background-image: url(../media/indexfull.jpg);
+		}
 
 	}
 
-	// --------------------------------------------  IPad, Notebooks
+	// --------------------------------------------  IPad
 	@media only screen and (min-width: 768px) and (max-width: 1023px){
+		.main__portada{
+			width: 30vw;
+		}
 		.carousel{
 			width: 50vw;
 		}
@@ -271,17 +267,18 @@ body{
 				}
 			}
 		}
-		main{
-			height: 75vh;
-			background-image: url(../media/index-square.JPG);
-			background-repeat: no-repeat;
-			background-size: 100vw;
-			}
+
+		body{
+			background-image: url(../media/index-cel.JPG);
+		}
 	}
 
 
-	// --------------------------------------------  PC, IPad Pro
+	// --------------------------------------------  PC, Notebooks, IPad apaisado
 	@media only screen and (min-width: 1024px) and (max-width: 1279px){
+		.main__portada{
+			width: 30vw;
+		}
 		.biografia{
 			height: 70vh;
 			background-position: center;
@@ -289,64 +286,57 @@ body{
 					width: 60vw;
 				}
 			}
-		main{
-			height: 70vh;
-			background-image: url(../media/index-square.JPG);
-			background-repeat: no-repeat;
-			background-size: 100vw;
-			}
+			body{
+				background-image: url(../media/indexfull.JPG);
+				}
 
 		}
 		@media only screen and (min-width: 1024px) and (max-width: 1279px) and (orientation: landscape){
-
-			main{
-				height: 70vh;
-				background-image: url(../media/index-big.JPG);
-				background-repeat: no-repeat;
-				background-size: 100vw;
-				}
+			.main__portada{
+				width: 25vw;
 			}
+
+			body{
+				background-image: url(../media/indexfull.jpg);
+			}
+		}
 		
 
 
 	// --------------------------------------------  PC XL
-	@media only screen and (min-width: 1280px) and (max-width: 1439){
-	.biografia{
-		height: 75vh;
-		background-position: center;
-			.parrafo{
-				width: 30vw;
+	@media only screen and (min-width: 1280px) and (max-width: 1439px){
+		.main__portada{
+			width: 25vw;
+		}
+		.biografia{
+			height: 75vh;
+			background-position: center;
+				.parrafo{
+					width: 30vw;
+				}
 			}
-		}
 
-	main{
-		height: 65vh;
-		background-image: url(../media/index-big.JPG);
-		background-repeat: no-repeat;
-		background-size: 100vw;
-		}
+		body{
+			background-image: url(../media/indexfull.JPG);
+			}
 
 	}
 
 	// --------------------------------------------  PC XXL
 	@media only screen and (min-width: 1440px){
-	.biografia{
-		height: 70vh;
-		width: 40vw;
-		background-position: center;
-			.parrafo{
-				width: 30vw;
+		.main__portada{
+			width: 20vw;
+		}
+		.biografia{
+			height: 70vh;
+			width: 40vw;
+			background-position: center;
+				.parrafo{
+					width: 30vw;
+				}
 			}
-		}
 
-	body{
-		height: 100vh;
-		background-image: url(../media/indexfull.JPG);
-		background-repeat: no-repeat;
-		background-size: 100vw;
-		
-		main{
-			height: 80vh;
-		}
-	}
+		body{
+			background-image: url(../media/indexfull.JPG);
+			}
 	}
