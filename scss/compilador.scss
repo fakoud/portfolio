@@ -4,6 +4,7 @@ $darkgrey: #4B4B4B;
 $opacidad: 0.75;
 $blanco: #FFFF;
 $rounded: 'Spartan', sans-serif;
+$comicsub: #4b4b4b -2px 0px;
 
 @keyframes aparecer {
 	0% {opacity:0%;}
@@ -39,6 +40,10 @@ body{
 		letter-spacing: 0.5vh;
 		color: $salmon;
 		font-weight: bold;
+	}
+
+	.comicsub{
+		text-shadow: $comicsub;
 	}
 
 	small{
@@ -166,7 +171,7 @@ body{
 			background-color: rgba($blanco, $opacidad);
 			border: solid 1px $darkgrey;
 			h5{
-				text-shadow: $darkgrey -2px 0px;
+				text-shadow: $comicsub
 			}
 			p{
 				color: $darkgrey;
@@ -176,11 +181,13 @@ body{
 
 	//Contacto
 		.cuadro{
-			background-color: rgba($blanco, $opacidad);
-			border: solid 1px $darkgrey;
+			border: solid 2px white;
 			height: 300px;
 			width: 300px;
-		
+			
+			h4{
+				text-shadow: $comicsub
+			}
 			.cuadro__form{
 				resize: none;
 				height: 50%;
@@ -194,7 +201,7 @@ body{
 			.cuadro__button{
 				background-color: white;
 				border: none;
-				color: $salmonlight;
+				color: $salmon;
 				font-weight: bold;
 			}
 			.cuadro__button:focus{
@@ -281,12 +288,14 @@ body{
 					}
 				}
 			}
-
+			.contacto{
+				height: 80vh;
+			}
 		}
 	}
 
 
-	// --------------------------------------------  PC, Notebooks, IPad apaisado
+	// --------------------------------------------  PC, Notebooks, IPad Pro, IPad apaisado
 	@media only screen and (min-width: 1024px) and (max-width: 1279px){
 		body{
 			background-image: url(../media/indexfull.JPG);
@@ -301,6 +310,9 @@ body{
 						width: 60vw;
 					}
 				}
+			.contacto{
+				height: 80vh;
+			}
 			}
 		}
 		@media only screen and (min-width: 1024px) and (max-width: 1279px) and (orientation: landscape){
@@ -315,7 +327,7 @@ body{
 		
 
 
-	// --------------------------------------------  PC XL
+	// --------------------------------------------  Ipad Pro apaisado, PC XL
 	@media only screen and (min-width: 1280px) and (max-width: 1439px){
 		body{
 			background-image: url(../media/indexfull.JPG);
