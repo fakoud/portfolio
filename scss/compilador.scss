@@ -70,6 +70,7 @@ body{
 	header{
 		.header__logo{
 			width: 60px;
+			height: 60px;
 			margin-right: 3vh;
 		}
 		h1{
@@ -159,6 +160,7 @@ body{
 	.biografia{
 		background-image: url(../media/biogrande.jpg);
 		background-repeat: no-repeat;
+		background-size: cover;
 		border: solid 20px white;
 		.parrafo{
 			background-color: rgba($blanco, $opacidad);
@@ -221,6 +223,9 @@ body{
 		}
 		.biografia{
 			background-image: url(../media/biosmall.jpg);
+			width: 97vw;
+			background-size: cover;
+			border: solid 2px white;
 			.parrafo{
 				width: 85vw;
 				margin: 2vh;
@@ -257,7 +262,6 @@ body{
 			letter-spacing: 2px;
 		}
 		.biografia{
-			background-size: 85vw;
 			height: 70vh;
 			background-position: center;
 			.parrafo{
@@ -280,7 +284,9 @@ body{
 			width: 30vw;
 		}
 		.biografia{
+
 			height: 70vh;
+			width: 80vw;
 			background-position: center;
 				.parrafo{
 					width: 60vw;
@@ -310,7 +316,7 @@ body{
 		}
 		.biografia{
 			height: 75vh;
-			background-position: center;
+			width: 50vw;
 				.parrafo{
 					width: 30vw;
 				}
@@ -330,7 +336,6 @@ body{
 		.biografia{
 			height: 70vh;
 			width: 40vw;
-			background-position: center;
 				.parrafo{
 					width: 30vw;
 				}

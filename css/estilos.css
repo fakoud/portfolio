@@ -52,6 +52,7 @@ body {
 
 header .header__logo {
   width: 60px;
+  height: 60px;
   margin-right: 3vh; }
 
 header h1 {
@@ -117,6 +118,7 @@ main {
 .biografia {
   background-image: url(../media/biogrande.jpg);
   background-repeat: no-repeat;
+  background-size: cover;
   border: solid 20px white; }
   .biografia .parrafo {
     background-color: rgba(255, 255, 255, 0.75);
@@ -163,7 +165,10 @@ main {
   .main__portada {
     width: 70vw; }
   .biografia {
-    background-image: url(../media/biosmall.jpg); }
+    background-image: url(../media/biosmall.jpg);
+    width: 97vw;
+    background-size: cover;
+    border: solid 2px white; }
     .biografia .parrafo {
       width: 85vw;
       margin: 2vh; }
@@ -186,7 +191,6 @@ main {
   .header__navstyle {
     letter-spacing: 2px; }
   .biografia {
-    background-size: 85vw;
     height: 70vh;
     background-position: center; }
     .biografia .parrafo {
@@ -201,6 +205,7 @@ main {
     width: 30vw; }
   .biografia {
     height: 70vh;
+    width: 80vw;
     background-position: center; }
     .biografia .parrafo {
       width: 60vw; }
@@ -218,7 +223,7 @@ main {
     width: 25vw; }
   .biografia {
     height: 75vh;
-    background-position: center; }
+    width: 50vw; }
     .biografia .parrafo {
       width: 30vw; }
   body {
@@ -229,8 +234,7 @@ main {
     width: 20vw; }
   .biografia {
     height: 70vh;
-    width: 40vw;
-    background-position: center; }
+    width: 40vw; }
     .biografia .parrafo {
       width: 30vw; }
   body {
