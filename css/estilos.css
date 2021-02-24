@@ -130,26 +130,26 @@ main {
     .biografia .parrafo p {
       color: #4B4B4B; }
 
-.cuadro {
+.contacto .cuadro {
   border: solid 2px white;
   height: 300px;
   width: 300px; }
-  .cuadro h4 {
+  .contacto .cuadro h4 {
     text-shadow: #4b4b4b -2px 0px; }
-  .cuadro .cuadro__form {
+  .contacto .cuadro .cuadro__form {
     resize: none;
     height: 50%; }
-  .cuadro .cuadro__form:focus {
+  .contacto .cuadro .cuadro__form:focus {
     border-color: #C98688;
     box-shadow: 0 0 0 0.25rem #e1afb0;
     opacity: 80%;
     resize: none; }
-  .cuadro .cuadro__button {
+  .contacto .cuadro .cuadro__button {
     background-color: white;
     border: none;
     color: #C98688;
     font-weight: bold; }
-  .cuadro .cuadro__button:focus {
+  .contacto .cuadro .cuadro__button:focus {
     border: none; }
 
 .Tradimg {
@@ -207,7 +207,7 @@ main {
         body .biografia .parrafo p {
           font-size: 1em; }
     body .contacto {
-      height: 80vh; } }
+      height: 70vh; } }
 
 @media only screen and (min-width: 1024px) and (max-width: 1279px) {
   body {
@@ -221,13 +221,7 @@ main {
       body .biografia .parrafo {
         width: 60vw; }
     body .contacto {
-      height: 80vh; } }
-
-@media only screen and (min-width: 1024px) and (max-width: 1279px) and (orientation: landscape) {
-  body {
-    background-image: url(../media/indexfull.jpg); }
-    body .main__portada {
-      width: 25vw; } }
+      height: 70vh; } }
 
 @media only screen and (min-width: 1280px) and (max-width: 1439px) {
   body {
@@ -238,7 +232,9 @@ main {
       height: 75vh;
       width: 50vw; }
       body .biografia .parrafo {
-        width: 30vw; } }
+        width: 30vw; }
+    body .contacto {
+      height: 60vh; } }
 
 @media only screen and (min-width: 1440px) {
   body {
@@ -249,4 +245,6 @@ main {
       height: 70vh;
       width: 40vw; }
       body .biografia .parrafo {
-        width: 30vw; } }
+        width: 30vw; }
+    body .contacto {
+      height: 60vh; } }

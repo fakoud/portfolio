@@ -180,6 +180,8 @@ body{
 	}
 
 	//Contacto
+		.contacto{
+
 		.cuadro{
 			border: solid 2px white;
 			height: 300px;
@@ -208,6 +210,7 @@ body{
 				border: none;
 			}
 		}
+	}
 	//Galeria
 		.Tradimg{
 			width: 250px;
@@ -289,7 +292,7 @@ body{
 				}
 			}
 			.contacto{
-				height: 80vh;
+				height: 70vh;
 			}
 		}
 	}
@@ -311,19 +314,10 @@ body{
 					}
 				}
 			.contacto{
-				height: 80vh;
-			}
-			}
-		}
-		@media only screen and (min-width: 1024px) and (max-width: 1279px) and (orientation: landscape){
-			body{
-				background-image: url(../media/indexfull.jpg);
-				.main__portada{
-					width: 25vw;
-				}
-
+				height: 70vh;
 			}
 		}
+	}
 		
 
 
@@ -341,6 +335,9 @@ body{
 						width: 30vw;
 					}
 				}
+			.contacto{
+				height: 60vh;
+			}
 		}
 
 	}
@@ -359,6 +356,9 @@ body{
 						width: 30vw;
 					}
 				}
+			.contacto{
+				height: 60vh;
+			}
 
 			}
 	}
