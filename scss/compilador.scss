@@ -182,35 +182,38 @@ body{
 	//Contacto
 		.contacto{
 
-		.cuadro{
-			border: solid 2px white;
-			height: 300px;
-			width: 300px;
-			
-			h4{
-				text-shadow: $comicsub
+			.cuadro--back{
+				background-color: rgba(black, 0.2);
 			}
-			.cuadro__form{
-				resize: none;
-				height: 50%;
-			}
-			.cuadro__form:focus{
-				border-color: $salmon;
-				box-shadow: 0 0 0 0.25rem rgb(225, 175, 176);
-				opacity: 80%;
-				resize: none;
-			}
-			.cuadro__button{
-				background-color: white;
-				border: none;
-				color: $salmon;
-				font-weight: bold;
-			}
-			.cuadro__button:focus{
-				border: none;
+			.cuadro{
+				border: solid 2px white;
+				height: 300px;
+				width: 300px;
+				
+				h4{
+					text-shadow: $comicsub
+				}
+				.cuadro__form{
+					resize: none;
+					height: 50%;
+				}
+				.cuadro__form:focus{
+					border-color: $salmon;
+					box-shadow: 0 0 0 0.25rem rgb(225, 175, 176);
+					opacity: 80%;
+					resize: none;
+				}
+				.cuadro__button{
+					background-color: white;
+					border: none;
+					color: $salmon;
+					font-weight: bold;
+				}
+				.cuadro__button:focus{
+					border: none;
+				}
 			}
 		}
-	}
 	//Galeria
 		.Tradimg{
 			width: 250px;
@@ -317,7 +320,7 @@ body{
 					}
 				}
 			.contacto{
-				height: 70vh;
+				height: 60vh;
 			}
 		}
 	}
