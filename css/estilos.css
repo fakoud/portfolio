@@ -13,7 +13,7 @@
 body {
   font-family: 'Open Sans Condensed', sans-serif;
   color: white;
-  background-image: url(../media/indexfull.JPG);
+  background-image: url(../media/indexfull.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover; }
@@ -176,7 +176,7 @@ main {
 
 @media only screen and (max-width: 479px) {
   body {
-    background-image: url(../media/index-cel.JPG); }
+    background-image: url(../media/index-cel.jpg); }
     body .main__portada {
       width: 70vw; }
     body .biografia {
@@ -201,7 +201,7 @@ main {
 
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
   body {
-    background-image: url(../media/index-cel.JPG); }
+    background-image: url(../media/index-cel.jpg); }
     body .main__portada {
       width: 30vw; }
     body .carousel {

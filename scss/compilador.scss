@@ -18,7 +18,7 @@ $comicsub: #4b4b4b -2px 0px;
 body{
 	font-family: 'Open Sans Condensed', sans-serif;
 	color: white;
-	background-image: url(../media/indexfull.JPG);
+	background-image: url(../media/indexfull.jpg);
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: cover;
@@ -68,11 +68,11 @@ body{
 		-moz-transition: opacity 1s;
 		-ms-transition: opacity 1s;
 		-o-transition: opacity 1s;
-}
+	}
 	.redes--img{
 		width: 35px;			
 	}
-}
+
 
 	header{
 		.header__logo{
@@ -136,7 +136,7 @@ body{
 				-ms-border-radius: 20%;
 				-o-border-radius: 20%;
 				-webkit-filter: grayscale(30%);
-}
+	}
 
 			.shop__promos{
 
@@ -223,6 +223,7 @@ body{
 		}
 	//Galeria
 		.Tradimg{
+			border: solid 2px white;
 			width: 250px;
 			opacity: 85%;
 			border-radius: 25px;
@@ -235,11 +236,11 @@ body{
 			transition-timing-function: ease;
 		}
 
-
-	// --------------------------------------------  Celulares
+}
+	// -------------------asdasd-------------------------  Celulares
 	@media only screen and (max-width: 479px){
 		body{
-			background-image: url(../media/index-cel.JPG);
+			background-image: url(../media/index-cel.jpg);
 			.main__portada{
 				width: 70vw;
 			}
@@ -279,7 +280,7 @@ body{
 	// ------------------  IPad
 	@media only screen and (min-width: 768px) and (max-width: 1023px){
 		body{
-			background-image: url(../media/index-cel.JPG);
+			background-image: url(../media/index-cel.jpg);
 			.main__portada{
 				width: 30vw;
 			}
