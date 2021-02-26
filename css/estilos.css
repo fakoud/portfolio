@@ -53,130 +53,112 @@ body {
     -o-transition: opacity 1s; }
   body .redes--img {
     width: 35px; }
-
-header .header__logo {
-  width: 60px;
-  height: 60px;
-  margin-right: 3vh; }
-
-header h1 {
-  color: #FFFF;
-  font-size: 1.5em;
-  font-family: "Spartan", sans-serif;
-  font-weight: bold;
-  letter-spacing: 4px;
-  margin: 0vh;
-  font-weight: bold; }
-
-header .header__navstyle {
-  font-family: "Spartan", sans-serif;
-  font-weight: bold; }
-
-header .header__navstyle--sub {
-  color: white; }
-
-header .header__navstyle--sub:active {
-  background-color: #C98688;
-  opacity: 55%; }
-
-header .header__navstyle--pad {
-  padding-left: 3vw; }
-
-footer .footer--font {
-  font-style: italic;
-  font-family: #rounded; }
-
-main {
-  height: 70vh; }
-  main h2 {
-    font-family: "Spartan", sans-serif; }
-
-.shop .shop__img {
-  border: solid 2px white;
-  border-radius: 20%;
-  filter: grayscale(30%);
-  -webkit-border-radius: 20%;
-  -moz-border-radius: 20%;
-  -ms-border-radius: 20%;
-  -o-border-radius: 20%;
-  -webkit-filter: grayscale(30%); }
-
-.shop .shop__promos .shop__promos--boton {
-  background-color: grey;
-  border: solid 2px lightgrey; }
-
-.shop .shop__promos .shop__promos--boton:hover {
-  background-color: #4B4B4B;
-  border-color: grey; }
-
-.shop .shop__promos .shop__promos--boton:focus {
-  background-color: #4B4B4B;
-  border-color: lightgrey;
-  box-shadow: 0 0 0 0.25rem; }
-
-.shop .shop__promos .shop__promos--boton:active {
-  background-color: #C98688;
-  border-color: lightgrey;
-  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out; }
-
-.shop .shop__promos .shop__table {
-  color: white; }
-  .shop .shop__promos .shop__table tr th {
-    color: #C98688; }
-
-.biografia {
-  background-image: url(../media/biogrande.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  border: solid 20px white; }
-  .biografia .parrafo {
-    background-color: rgba(255, 255, 255, 0.75);
-    border: solid 1px #4B4B4B; }
-    .biografia .parrafo h5 {
-      text-shadow: #4b4b4b -2px 0px; }
-    .biografia .parrafo p {
-      color: #4B4B4B; }
-
-.contacto .cuadro--back {
-  background-color: rgba(0, 0, 0, 0.2); }
-
-.contacto .cuadro {
-  border: solid 2px white;
-  height: 300px;
-  width: 300px; }
-  .contacto .cuadro h4 {
-    text-shadow: #4b4b4b -2px 0px; }
-  .contacto .cuadro .cuadro__form {
-    resize: none;
-    height: 50%; }
-  .contacto .cuadro .cuadro__form:focus {
-    border-color: #C98688;
-    box-shadow: 0 0 0 0.25rem #e1afb0;
-    opacity: 80%;
-    resize: none; }
-  .contacto .cuadro .cuadro__button {
-    background-color: white;
-    border: none;
-    color: #C98688;
+  body header .header__logo {
+    width: 60px;
+    height: 60px;
+    margin-right: 3vh; }
+  body header h1 {
+    color: #FFFF;
+    font-size: 1.5em;
+    font-family: "Spartan", sans-serif;
+    font-weight: bold;
+    letter-spacing: 4px;
+    margin: 0vh;
     font-weight: bold; }
-  .contacto .cuadro .cuadro__button:focus {
-    border: none; }
-
-.Tradimg {
-  width: 250px;
-  opacity: 85%;
-  border-radius: 25px;
-  transition: 1s;
-  -webkit-filter: grayscale(60%); }
-
-.Tradimg:hover {
-  transition: filter 1s;
-  -webkit-filter: grayscale(0%);
-  transition-timing-function: ease; }
+  body header .header__navstyle {
+    font-family: "Spartan", sans-serif;
+    font-weight: bold; }
+  body header .header__navstyle--sub {
+    color: white; }
+  body header .header__navstyle--sub:active {
+    background-color: #C98688;
+    opacity: 55%; }
+  body header .header__navstyle--pad {
+    padding-left: 3vw; }
+  body footer .footer--font {
+    font-style: italic;
+    font-family: #rounded; }
+  body main {
+    height: 70vh; }
+    body main h2 {
+      font-family: "Spartan", sans-serif; }
+  body .shop .shop__img {
+    border: solid 2px white;
+    border-radius: 20%;
+    filter: grayscale(30%);
+    -webkit-border-radius: 20%;
+    -moz-border-radius: 20%;
+    -ms-border-radius: 20%;
+    -o-border-radius: 20%;
+    -webkit-filter: grayscale(30%); }
+  body .shop .shop__promos .shop__promos--boton {
+    background-color: grey;
+    border: solid 2px lightgrey; }
+  body .shop .shop__promos .shop__promos--boton:hover {
+    background-color: #4B4B4B;
+    border-color: grey; }
+  body .shop .shop__promos .shop__promos--boton:focus {
+    background-color: #4B4B4B;
+    border-color: lightgrey;
+    box-shadow: 0 0 0 0.25rem; }
+  body .shop .shop__promos .shop__promos--boton:active {
+    background-color: #C98688;
+    border-color: lightgrey;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out; }
+  body .shop .shop__promos .shop__table {
+    color: white; }
+    body .shop .shop__promos .shop__table tr th {
+      color: #C98688; }
+  body .biografia {
+    background-image: url(../media/biogrande.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: solid 20px white; }
+    body .biografia .parrafo {
+      background-color: rgba(255, 255, 255, 0.75);
+      border: solid 1px #4B4B4B; }
+      body .biografia .parrafo h5 {
+        text-shadow: #4b4b4b -2px 0px; }
+      body .biografia .parrafo p {
+        color: #4B4B4B; }
+  body .contacto .cuadro--back {
+    background-color: rgba(0, 0, 0, 0.2); }
+  body .contacto .cuadro {
+    border: solid 2px white;
+    height: 300px;
+    width: 300px; }
+    body .contacto .cuadro h4 {
+      text-shadow: #4b4b4b -2px 0px; }
+    body .contacto .cuadro .cuadro__form {
+      resize: none;
+      height: 50%; }
+    body .contacto .cuadro .cuadro__form:focus {
+      border-color: #C98688;
+      box-shadow: 0 0 0 0.25rem #e1afb0;
+      opacity: 80%;
+      resize: none; }
+    body .contacto .cuadro .cuadro__button {
+      background-color: white;
+      border: none;
+      color: #C98688;
+      font-weight: bold; }
+    body .contacto .cuadro .cuadro__button:focus {
+      border: none; }
+  body .Tradimg {
+    border: solid 2px white;
+    width: 250px;
+    opacity: 85%;
+    border-radius: 25px;
+    transition: 1s;
+    -webkit-filter: grayscale(60%); }
+  body .Tradimg:hover {
+    transition: filter 1s;
+    -webkit-filter: grayscale(0%);
+    transition-timing-function: ease; }
 
 @media only screen and (max-width: 479px) {
   body {
-    background-image: url(../media/index-cel.jpg); }
+    background-image: url(../media/index-cel.JPG); }
     body .main__portada {
       width: 70vw; }
     body .biografia {
@@ -201,7 +183,7 @@ main {
 
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
   body {
-    background-image: url(../media/index-cel.jpg); }
+    background-image: url(../media/index-cel.JPG); }
     body .main__portada {
       width: 30vw; }
     body .carousel {
