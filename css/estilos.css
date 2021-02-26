@@ -29,7 +29,8 @@ body {
   body .subtitulo {
     letter-spacing: 0.5vh;
     color: #C98688;
-    font-weight: bold; }
+    font-weight: bold;
+    font-size: 1.3em; }
   body .comicsub {
     text-shadow: #4b4b4b -2px 0px; }
   body small {
@@ -90,9 +91,14 @@ main {
     font-family: "Spartan", sans-serif; }
 
 .shop .shop__img {
-  padding: 0.5vh;
-  border-radius: 60px;
-  filter: grayscale(20%); }
+  border: solid 2px white;
+  border-radius: 20%;
+  filter: grayscale(30%);
+  -webkit-border-radius: 20%;
+  -moz-border-radius: 20%;
+  -ms-border-radius: 20%;
+  -o-border-radius: 20%;
+  -webkit-filter: grayscale(30%); }
 
 .shop .shop__promos .shop__promos--boton {
   background-color: grey;
@@ -113,7 +119,7 @@ main {
   transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out; }
 
 .shop .shop__promos .shop__table {
-  color: grey; }
+  color: white; }
   .shop .shop__promos .shop__table tr th {
     color: #C98688; }
 
@@ -220,6 +226,8 @@ main {
     background-image: url(../media/indexfull.JPG); }
     body .main__portada {
       width: 30vw; }
+    body .shop .shop__img {
+      width: 20vw; }
     body .biografia {
       height: 70vh;
       width: 80vw;
@@ -237,8 +245,6 @@ main {
     body .biografia {
       height: 75vh;
       width: 50vw; }
-      body .biografia .parrafo {
-        width: 30vw; }
     body .contacto {
       height: 60vh; } }
 
@@ -247,10 +253,10 @@ main {
     background-image: url(../media/indexfull.JPG); }
     body .main__portada {
       width: 20vw; }
+    body .shop .shop__img {
+      width: 15vw; }
     body .biografia {
       height: 70vh;
       width: 40vw; }
-      body .biografia .parrafo {
-        width: 30vw; }
     body .contacto {
       height: 60vh; } }
