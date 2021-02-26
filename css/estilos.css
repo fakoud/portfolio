@@ -13,6 +13,7 @@
 body {
   font-family: 'Open Sans Condensed', sans-serif;
   color: white;
+  background-image: url(../media/indexfull.JPG);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover; }
@@ -188,17 +189,15 @@ main {
         margin: 2vh; } }
 
 @media only screen and (min-width: 480px) and (max-width: 767px) {
-  body {
-    background-image: url(../media/indexfull.jpg); }
-    body .main__portada {
-      width: 30vw; }
-    body .biografia {
-      width: 80vw;
-      background-image: url(../media/biosmall.jpg);
-      background-size: cover;
-      border: solid 10px white; }
-      body .biografia .parrafo {
-        width: 60vw; } }
+  body .main__portada {
+    width: 30vw; }
+  body .biografia {
+    width: 80vw;
+    background-image: url(../media/biosmall.jpg);
+    background-size: cover;
+    border: solid 10px white; }
+    body .biografia .parrafo {
+      width: 60vw; } }
 
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
   body {
@@ -222,41 +221,35 @@ main {
       height: 70vh; } }
 
 @media only screen and (min-width: 1024px) and (max-width: 1279px) {
-  body {
-    background-image: url(../media/indexfull.JPG); }
-    body .main__portada {
-      width: 30vw; }
-    body .shop .shop__img {
-      width: 20vw; }
-    body .biografia {
-      height: 70vh;
-      width: 80vw;
-      background-position: center; }
-      body .biografia .parrafo {
-        width: 60vw; }
-    body .contacto {
-      height: 60vh; } }
+  body .main__portada {
+    width: 30vw; }
+  body .shop .shop__img {
+    width: 20vw; }
+  body .biografia {
+    height: 70vh;
+    width: 80vw;
+    background-position: center; }
+    body .biografia .parrafo {
+      width: 60vw; }
+  body .contacto {
+    height: 60vh; } }
 
 @media only screen and (min-width: 1280px) and (max-width: 1439px) {
-  body {
-    background-image: url(../media/indexfull.JPG); }
-    body .main__portada {
-      width: 25vw; }
-    body .biografia {
-      height: 75vh;
-      width: 50vw; }
-    body .contacto {
-      height: 60vh; } }
+  body .main__portada {
+    width: 25vw; }
+  body .biografia {
+    height: 75vh;
+    width: 50vw; }
+  body .contacto {
+    height: 60vh; } }
 
 @media only screen and (min-width: 1440px) {
-  body {
-    background-image: url(../media/indexfull.JPG); }
-    body .main__portada {
-      width: 20vw; }
-    body .shop .shop__img {
-      width: 15vw; }
-    body .biografia {
-      height: 70vh;
-      width: 40vw; }
-    body .contacto {
-      height: 60vh; } }
+  body .main__portada {
+    width: 20vw; }
+  body .shop .shop__img {
+    width: 15vw; }
+  body .biografia {
+    height: 70vh;
+    width: 40vw; }
+  body .contacto {
+    height: 60vh; } }
