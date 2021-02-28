@@ -30,6 +30,8 @@ body {
     font-size: 1.3em; }
   body .comicsub {
     text-shadow: #4b4b4b -2px 0px; }
+  body .cuadro--back {
+    background-color: rgba(0, 0, 0, 0.2); }
   body small {
     font-family: "Spartan", sans-serif;
     font-weight: bold;
@@ -59,8 +61,7 @@ body {
     font-family: "Spartan", sans-serif;
     font-weight: bold;
     letter-spacing: 4px;
-    margin: 0vh;
-    font-weight: bold; }
+    margin: 0vh; }
   body header .header__navstyle {
     font-family: "Spartan", sans-serif;
     font-weight: bold; }
@@ -117,8 +118,6 @@ body {
         text-shadow: #4b4b4b -2px 0px; }
       body .biografia .parrafo p {
         color: #4B4B4B; }
-  body .contacto .cuadro--back {
-    background-color: rgba(0, 0, 0, 0.2); }
   body .contacto .cuadro {
     border: solid 2px white;
     height: 300px;

@@ -41,6 +41,10 @@ body{
 	.comicsub{
 		text-shadow: $comicsub;
 	}
+	
+	.cuadro--back{
+		background-color: rgba(black, 0.2);
+	}
 
 	small{
 		font-family: $rounded;
@@ -81,7 +85,6 @@ body{
 			font-weight: bold;
 			letter-spacing: 4px;
 			margin: 0vh;
-			font-weight: bold;
 		}
 			//Navbar
 		.header__navstyle{
@@ -182,10 +185,7 @@ body{
 
 	//Contacto
 		.contacto{
-
-			.cuadro--back{
-				background-color: rgba(black, 0.2);
-			}
+			
 			.cuadro{
 				border: solid 2px white;
 				height: 300px;
@@ -215,6 +215,7 @@ body{
 				}
 			}
 		}
+
 	//Galeria
 		.Tradimg{
 			border: solid 2px white;
