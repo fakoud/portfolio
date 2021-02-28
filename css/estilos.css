@@ -143,7 +143,6 @@ body {
   body .Tradimg {
     border: solid 2px white;
     width: 250px;
-    opacity: 85%;
     border-radius: 25px;
     transition: 1s;
     -webkit-filter: grayscale(60%); }
