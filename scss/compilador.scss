@@ -23,12 +23,6 @@ body{
 	background-attachment: fixed;
 	background-size: cover;
 
-	hr{
-		color: white;
-		width: 70vw;
-		margin: 1vh 10vw 1vh 10vw;
-	}
-
 	.aparecer{
 		animation-name: aparecer;
 		animation-iteration-count: 1;
@@ -235,9 +229,22 @@ body{
 			-webkit-filter: grayscale(0%);
 			transition-timing-function: ease;
 		}
+		.modal--bg{
+			background-color: transparent;
+			border: none;
+		}
+		.modal--img{
+			padding: 0px;
+			border: solid 1px white;
+		}
+		.modal--font{
+			font-weight: bold;
+			letter-spacing: 0.3vh;
+		}
+
 
 }
-	// -------------------asdasd-------------------------  Celulares
+	// --------------------------------------------  Celulares
 	@media only screen and (max-width: 479px){
 		body{
 			background-image: url(../media/index-cel.JPG);

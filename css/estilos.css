@@ -17,10 +17,6 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover; }
-  body hr {
-    color: white;
-    width: 70vw;
-    margin: 1vh 10vw 1vh 10vw; }
   body .aparecer {
     animation-name: aparecer;
     animation-iteration-count: 1;
@@ -155,6 +151,15 @@ body {
     transition: filter 1s;
     -webkit-filter: grayscale(0%);
     transition-timing-function: ease; }
+  body .modal--bg {
+    background-color: transparent;
+    border: none; }
+  body .modal--img {
+    padding: 0px;
+    border: solid 1px white; }
+  body .modal--font {
+    font-weight: bold;
+    letter-spacing: 0.3vh; }
 
 @media only screen and (max-width: 479px) {
   body {
