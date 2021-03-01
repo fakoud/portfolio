@@ -110,6 +110,10 @@ body{
 			font-style: italic;
 			font-family: #rounded;
 		}
+		hr{
+			color: white;
+			width: 70vw;
+		}
 	}
 
 	//Index
@@ -251,6 +255,9 @@ body{
 			.main__portada{
 				width: 70vw;
 			}
+			.carousel{
+				width: 60vw;
+			}
 			.biografia{
 				background-image: url(../media/biosmall.jpg);
 				width: 90vw;
@@ -269,6 +276,9 @@ body{
 		body{
 			.main__portada{
 				width: 30vw;
+			}
+			.carousel{
+				width: 50vw;
 			}
 			.biografia{
 				width: 80vw;
@@ -292,7 +302,7 @@ body{
 				width: 30vw;
 			}
 			.carousel{
-				width: 50vw;
+				width: 35vw;
 			}
 			h5, p{
 				font-size: 1.2em;
@@ -329,7 +339,7 @@ body{
 				}
 			}
 			.biografia{
-				height: 70vh;
+				height: 75vh;
 				width: 80vw;
 				background-position: center;
 					.parrafo{

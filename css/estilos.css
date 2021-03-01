@@ -75,6 +75,9 @@ body {
   body footer .footer--font {
     font-style: italic;
     font-family: #rounded; }
+  body footer hr {
+    color: white;
+    width: 70vw; }
   body main {
     height: 70vh; }
     body main h2 {
@@ -164,6 +167,8 @@ body {
     background-image: url(../media/index-cel.JPG); }
     body .main__portada {
       width: 70vw; }
+    body .carousel {
+      width: 60vw; }
     body .biografia {
       background-image: url(../media/biosmall.jpg);
       width: 90vw;
@@ -176,6 +181,8 @@ body {
 @media only screen and (min-width: 480px) and (max-width: 767px) {
   body .main__portada {
     width: 30vw; }
+  body .carousel {
+    width: 50vw; }
   body .biografia {
     width: 80vw;
     background-image: url(../media/biosmall.jpg);
@@ -190,7 +197,7 @@ body {
     body .main__portada {
       width: 30vw; }
     body .carousel {
-      width: 50vw; }
+      width: 35vw; }
     body h5, body p {
       font-size: 1.2em; }
     body .header__navstyle {
@@ -211,7 +218,7 @@ body {
   body .shop .shop__img {
     width: 20vw; }
   body .biografia {
-    height: 70vh;
+    height: 75vh;
     width: 80vw;
     background-position: center; }
     body .biografia .parrafo {
